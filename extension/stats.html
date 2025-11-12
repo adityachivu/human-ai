@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Browsing Statistics</title>
+  <link rel="stylesheet" href="stats.css">
+  <script src="chart.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>Browsing Statistics</h1>
+      <p class="subtitle">Last 30 Days</p>
+    </header>
+
+    <div class="controls">
+      <div class="control-group">
+        <label for="topN">Show Top:</label>
+        <select id="topN">
+          <option value="10">Top 10</option>
+          <option value="20" selected>Top 20</option>
+          <option value="50">Top 50</option>
+          <option value="all">All Domains</option>
+        </select>
+      </div>
+
+      <div class="control-group">
+        <label for="timeRange">Time Range:</label>
+        <select id="timeRange">
+          <option value="7">Last 7 Days</option>
+          <option value="30" selected>Last 30 Days</option>
+          <option value="90">Last 90 Days</option>
+        </select>
+      </div>
+
+      <button id="refreshBtn" class="refresh-btn">Refresh</button>
+    </div>
+
+    <div class="summary-cards">
+      <div class="card">
+        <div class="card-value" id="totalVisits">-</div>
+        <div class="card-label">Total Visits</div>
+      </div>
+      <div class="card">
+        <div class="card-value" id="uniqueDomains">-</div>
+        <div class="card-label">Unique Domains</div>
+      </div>
+      <div class="card">
+        <div class="card-value" id="topDomain">-</div>
+        <div class="card-label">Most Visited</div>
+      </div>
+    </div>
+
+    <div class="chart-container">
+      <canvas id="histogramChart"></canvas>
+    </div>
+
+    <div class="loading" id="loading">
+      <div class="spinner"></div>
+      <p>Analyzing your browsing history...</p>
+    </div>
+
+    <div class="back-link">
+      <a href="feed.html">← Back to History Feed</a>
+    </div>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="stats.js"></script>
+</body>
+</html>

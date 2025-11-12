@@ -1,0 +1,29 @@
+{
+  "note": "Edit this file to add domains and URL patterns to filter from your history feed. Changes take effect after reloading the extension or refreshing the feed page.",
+  "domains": [
+    "chrome-extension://*",
+    "chrome://*",
+    "campus.tum.de",
+    "piazza.com",
+    "calendar.proton.me",
+    "login.tum.de",
+    "web.whatsapp.com",
+    "zoom.us",
+    "meet.google.com"
+  ],
+  "patterns": [
+    "calendar.*",
+    "mail.*",
+    "search.*",
+    "moodle.*",
+    "/login"
+  ],
+  "examples": {
+    "domain_exact": "example.com - blocks only example.com",
+    "domain_wildcard_subdomain": "*.example.com - blocks any.example.com, www.example.com (but not example.com itself)",
+    "domain_wildcard_any": "*example* - blocks any domain containing 'example'",
+    "pattern_path": "/login - blocks any URL containing /login",
+    "pattern_wildcard": "*checkout* - blocks URLs containing 'checkout'",
+    "pattern_query": "*?utm_source=* - blocks URLs with utm_source parameter"
+  }
+}

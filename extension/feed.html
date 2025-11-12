@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>History Feed</title>
+  <link rel="stylesheet" href="feed.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>Your History Feed</h1>
+      <p class="subtitle">Scroll through your most recently visited pages</p>
+      <p class="filtered-count" id="filteredCount" style="display: none;"></p>
+    </header>
+
+    <div class="feed" id="feed">
+      <!-- Cards will be dynamically inserted here -->
+    </div>
+
+    <div class="loading" id="loading">
+      <div class="spinner"></div>
+      <p>Loading more history...</p>
+    </div>
+
+    <div class="sentinel" id="sentinel"></div>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="feed.js"></script>
+</body>
+</html>

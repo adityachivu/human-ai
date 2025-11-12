@@ -1,0 +1,19 @@
+{
+  "name": "History Feed",
+  "description": "View your browsing history as a social media-style feed",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": [
+    "history",
+    "tabs",
+    "storage"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "action": {
+    "default_popup": "hello.html",
+    "default_icon": "hello_extensions.png"
+  }
+}
+
