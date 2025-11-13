@@ -9,7 +9,9 @@
     "login.tum.de",
     "web.whatsapp.com",
     "zoom.us",
-    "meet.google.com"
+    "meet.google.com",
+    "google.com",
+    "tum.edu"
   ],
   "patterns": [
     "calendar.*",
